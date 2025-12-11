@@ -4,14 +4,7 @@ import Image from "next/image"
 import { Download01Icon } from "@hugeicons-pro/core-stroke-standard"
 import { HugeiconsIcon } from "@hugeicons/react"
 
-/**
- * The Hero component displays a temporary link to download the resume PDF, clicks on it, and then removes it.
- * It also displays a brief description of Muhammad Asif, a Software Engineer.
- */
 const Hero = () => {
-  /**
-   * Creates a temporary link to download the resume PDF, clicks on it, and then removes it.
-   */
   const handleDownloadResume = () => {
     const link = document.createElement("a")
     link.href = "/mdasif_frontend_resume.pdf"
@@ -35,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="relative">
           <Image
-            src="/images/photo-mdasif.webp"
+            src="/images/muhammadasif-me.webp"
             alt="About Muhammad Asif"
             width={320}
             height={320}
