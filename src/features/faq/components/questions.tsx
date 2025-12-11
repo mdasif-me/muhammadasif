@@ -32,7 +32,7 @@ const Questions = () => {
   }, [api])
 
   return (
-    <div className="mx-auto w-full card pt-8 px-5 h-full flex flex-col">
+    <div className="mx-auto w-full card pt-8 md:px-5 h-full flex flex-col">
       <Carousel
         orientation="vertical"
         setApi={setApi}
@@ -62,7 +62,7 @@ const Questions = () => {
           </div>
           <CarouselNext className="static md:size-12! size-fit! translate-y-0 carousel-button" />
         </div>
-        <CarouselContent className="-mt-1 h-[700px]">
+        <CarouselContent className="-mt-1 max-h-[700px]">
           {questions.map((question, index) => (
             <CarouselItem key={index} className="pt-1 md:basis-1/2">
               <div className="p-1">

@@ -9,7 +9,7 @@ const QuickConnect = () => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex-1">
-        <div className="card p-6 w-full h-full">
+        <div className="card p-6 w-full h-full md:mt-0 mt-6">
           <div className="flex justify-center items-center w-full h-full">
             <div className="space-y-12 w-full">
               <article className="text-center space-y-2">
