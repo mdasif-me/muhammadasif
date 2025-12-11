@@ -176,25 +176,28 @@ const StaggeredMenu = ({
       >
         <div className="flex flex-col h-full">
           {/* Menu Header */}
-          <button
-            onClick={closeMenu}
-            className="p-6 rounded-md text-foreground cursor-pointer hover:text-primary transition-colors duration-200 w-fit"
-            aria-label="Close menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center w-full justify-between">
+            <span className="p-6 text-[2.2rem]">Menus</span>
+            <button
+              onClick={closeMenu}
+              className="p-6 rounded-md text-foreground cursor-pointer hover:text-primary transition-colors duration-200 w-fit"
+              aria-label="Close menus"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
 
           {/* Menu Items */}
           <nav className="flex-1 p-6">
@@ -213,7 +216,7 @@ const StaggeredMenu = ({
                   >
                     <Link
                       href={item.href}
-                      className="group relative block sm:text-[4rem] text-[3rem] font-medium text-foreground rounded-lg transition-colors duration-200 overflow-hidden"
+                      className="group relative block sm:text-[4rem] text-[2.2rem] font-medium text-foreground rounded-lg transition-colors duration-200 overflow-hidden"
                       onClick={closeMenu}
                     >
                       <span className="relative z-10">{item.name}</span>
