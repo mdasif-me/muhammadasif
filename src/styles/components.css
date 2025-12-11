@@ -376,6 +376,6 @@
   }
 
   .quote_container:hover .quote_text {
-    transform: translateY(33px);
+    transform: translateY(31px);
   }
 }

@@ -21,7 +21,7 @@ const Reviews = () => {
         }}
         className="w-full"
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-4 my-1">
           {reviews.map((rev) => (
             <CarouselItem
               key={rev.id}
