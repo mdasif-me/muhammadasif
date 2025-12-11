@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+import React, { useRef } from "react"
 import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
@@ -13,9 +13,15 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Review = ({ review }: { review: IReview }) => {
   const cardRef = useRef<HTMLDivElement>(null)
+  const [isClient, setIsClient] = React.useState(false)
+
+  React.useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   useGSAP(
     () => {
+      if (!isClient) return
       gsap.fromTo(
         cardRef.current,
         { opacity: 0, y: 20 },
@@ -32,7 +38,7 @@ const Review = ({ review }: { review: IReview }) => {
         }
       )
     },
-    { scope: cardRef }
+    { scope: cardRef, dependencies: [isClient] }
   )
 
   const jsonLd = {
