@@ -18,7 +18,7 @@ const Banner = () => {
         <Link
           href={SOCIALS[0].href}
           target="_blank"
-          className={`lg:pr-20 xl:pr-36 -ml-3`}
+          className={`lg:pr-20 xl:pr-36 md:-ml-3 md:mt-0 ml-3 mt-6`}
         >
           <Quote isWrapper text="Get in Touch" />
         </Link>

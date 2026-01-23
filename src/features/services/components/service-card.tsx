@@ -68,11 +68,11 @@ function ServiceCard({
   return (
     <div ref={cardRef} className="relative group cursor-default">
       <div className="relative border border-[#27272766] rounded-2xl p-6 h-full overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
         <div ref={contentRef} className="relative z-10">
           <div className="mb-4 relative">
-            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+            <div className="w-14 h-14 rounded-xl bg-linear-to-br from-primary to-primary/70 flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
               <HugeiconsIcon
                 icon={Icon}
                 className="w-7 h-7 text-primary-foreground"

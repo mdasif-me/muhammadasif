@@ -15,19 +15,6 @@ interface IQuoteProps {
   disabled?: boolean
 }
 
-/**
- * A Quote component that displays a quote and an arrow icon.
- * @param {string} text - The text to be displayed.
- * @param {function} onClick - The function to be called when the quote is clicked.
- * @param {string} className - The className to be applied to the quote container.
- * @param {string} iconColor - The color of the arrow icon.
- * @param {boolean} disabled - Whether the quote is disabled or not.
- * @param {boolean} isWrapper - Whether the quote is wrapped in a container or not.
- * @param {boolean} isBordered - Whether the background of the quote is bordered or not.
- * @param {boolean} isBackground - Whether the background of the quote is filled or not.
- * @param {boolean} isText - Whether the text of the quote is displayed or not.
- * @returns {JSX.Element} The Quote component.
- */
 const Quote = ({
   text = "GET A QUOTE",
   onClick,
