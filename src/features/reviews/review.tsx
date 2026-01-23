@@ -26,34 +26,25 @@ const Review = ({ review }: { review: IReview }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className={`${styles.card} group relative`}>
-        <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-        <article className="px-6 sm:gap-7 gap-3 py-6 sm:py-10 flex-1 flex flex-col justify-start relative z-10">
-          <h3 className="gradient-text mb-4 text-xl font-semibold group-hover:text-primary transition-colors duration-300">
-            {review.title}
-          </h3>
-          <p className="description flex-1 text-gray-300 leading-relaxed">
-            {`"${review.review}"`}
-          </p>
-        </article>
-        <div
-          className={`${styles.footer} w-full sm:p-6 px-6 py-4 flex items-center gap-4 mt-auto border-t border-white/5 relative z-10`}
-        >
-          <Image
-            className="rounded-full object-cover w-14 h-14 border-2 border-white/10 group-hover:border-primary/50 transition-colors duration-300"
-            src={review.photo}
-            alt={review.name}
-            width={56}
-            height={56}
-          />
-          <article className="space-y-0.5">
-            <p className="text-lg text-white font-semibold group-hover:text-primary transition-colors duration-300">
-              {review.name}
-            </p>
-            <p className="text-sm font-medium text-gray-400">
-              {review.designation}
-            </p>
-          </article>
+      <div className={styles.card}>
+        <div className={styles.content}>
+          <h3 className={`${styles.title} gradient-text`}>{review.title}</h3>
+          <p className="description">{`"${review.review}"`}</p>
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.authorImage}>
+            <Image
+              src={review.photo}
+              alt={review.name}
+              width={56}
+              height={56}
+              className={styles.avatar}
+            />
+          </div>
+          <div className={styles.authorInfo}>
+            <p className={styles.authorName}>{review.name}</p>
+            <p className={styles.authorDesignation}>{review.designation}</p>
+          </div>
         </div>
       </div>
     </>

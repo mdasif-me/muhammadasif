@@ -2,6 +2,8 @@
 
 import React from "react"
 
+import styles from "../styles/faq.module.css"
+
 const QuestionForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -27,18 +29,12 @@ const QuestionForm = () => {
   }
 
   return (
-    <div className="xl:min-w-[600px] card md:p-8 p-3.5 h-full flex flex-col">
-      <h3 className="gradient-text !capitalize !font-bold mb-6">
-        Ask Your Question
-      </h3>
+    <div className={styles.formContainer}>
+      <h3 className="gradient-text mb-8">Ask Your Question</h3>
 
-      <form
-        onSubmit={handleSubmit}
-        action=""
-        className="self-stretch flex flex-col items-center gap-2.5 w-full space-y-3.5 flex-1"
-      >
-        <div className={`space-y-3 w-full flex-1 flex flex-col`}>
-          <label htmlFor="name" className={`text-xl font-medium leading-8`}>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <div className={styles.formGroup}>
+          <label htmlFor="name" className={styles.label}>
             Name
           </label>
           <input
@@ -48,11 +44,11 @@ const QuestionForm = () => {
             name="name"
             required={true}
             placeholder="Enter your name"
-            className="bg-background rounded-2xl py-2.5 px-3 h-20 w-full text-lg text-[#6F6F6F] font-normal outline-none"
+            className={styles.input}
           />
         </div>
-        <div className={`space-y-3 w-full flex-1 flex flex-col`}>
-          <label htmlFor="email" className={`text-xl font-medium leading-8`}>
+        <div className={styles.formGroup}>
+          <label htmlFor="email" className={styles.label}>
             Email
           </label>
           <input
@@ -62,11 +58,11 @@ const QuestionForm = () => {
             name="email"
             required={true}
             placeholder="Enter your email"
-            className="bg-background rounded-2xl py-2.5 px-3 h-20 w-full text-lg text-[#6F6F6F] font-normal outline-none"
+            className={styles.input}
           />
         </div>
-        <div className={`space-y-3 w-full flex-1 flex flex-col`}>
-          <label htmlFor="question" className={`text-xl font-medium leading-8`}>
+        <div className={`${styles.formGroup} ${styles.formGroupTextarea}`}>
+          <label htmlFor="question" className={styles.label}>
             Question
           </label>
           <textarea
@@ -74,16 +70,11 @@ const QuestionForm = () => {
             autoComplete="off"
             name="question"
             required={true}
-            cols={120}
-            rows={5}
-            placeholder="Enter your Question here...."
-            className="bg-background rounded-2xl py-2.5 px-3 w-full text-lg text-[#6F6F6F] font-normal outline-none flex-1 min-h-[200px]"
+            placeholder="Enter your question here..."
+            className={`${styles.input} ${styles.textarea}`}
           />
         </div>
-        <button
-          type="submit"
-          className="mt-6 bg-primary text-[#E1EAE5] w-full py-[18px] px-6 shrink-0 rounded-[12px] uppercase text-lg font-medium leading-7"
-        >
+        <button type="submit" className={styles.submitButton}>
           Send Message
         </button>
       </form>

@@ -1,17 +1,239 @@
-.gradient-text {
-  font-family: "Roboto Flex", sans-serif !important;
-  font-size: 24px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 150% !important; /* 36px */
-  background: linear-gradient(
-    133deg,
-    #fff -47.63%,
-    #fff -12.48%,
-    #fff 6.3%,
-    #3e5d52 93.99%
-  ) !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+/* Questions Container */
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+  min-height: 600px;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-shrink: 0;
+}
+
+.navButton {
+  position: static !important;
+  transform: translateY(0) !important;
+  width: 48px;
+  height: 48px;
+  background: #272727;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.navButton:hover {
+  border-color: rgba(62, 93, 82, 0.5);
+}
+
+.indicators {
+  display: flex;
+  width: 160px;
+  height: 56px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background: #272727;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.indicator {
+  width: 4px;
+  height: 24px;
+  border-radius: 4px;
+  background: rgba(167, 190, 180, 0.2);
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator:hover {
+  background: rgba(167, 190, 180, 0.4);
+}
+
+.indicatorActive {
+  background: #3e5d52;
+  transform: scaleX(1.2);
+}
+
+/* Question Card */
+.questionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  min-height: 320px;
+  background: #0f0f0f;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    opacity 0.3s ease,
+    border-color 0.3s ease;
+  opacity: 0.3;
+}
+
+.questionCardActive {
+  opacity: 1;
+  border-color: rgba(62, 93, 82, 0.3);
+}
+
+/* Form Container */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+  min-height: 600px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  flex: 1;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.formGroupTextarea {
+  flex: 1;
+}
+
+.label {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a7beb4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input {
+  padding: 16px;
+  background: #0f0f0f;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  color: #a7beb4;
+  outline: none;
+  transition: border-color 0.3s ease;
+  height: 56px;
+}
+
+.input:focus {
+  border-color: rgba(62, 93, 82, 0.5);
+}
+
+.input::placeholder {
+  color: #6f6f6f;
+}
+
+.textarea {
+  height: auto;
+  min-height: 180px;
+  resize: vertical;
+  flex: 1;
+}
+
+.submitButton {
+  margin-top: 8px;
+  padding: 16px 24px;
+  background: #3e5d52;
+  color: #e1eae5;
+  border: none;
+  border-radius: 12px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #4a6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .questionsContainer,
+  .formContainer {
+    padding: 24px;
+    min-height: 500px;
+  }
+
+  .navigation {
+    margin-bottom: 32px;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .indicators {
+    width: 140px;
+    height: 48px;
+    padding: 10px 16px;
+  }
+
+  .questionCard {
+    padding: 24px;
+    gap: 20px;
+    min-height: 280px;
+  }
+
+  .form {
+    gap: 20px;
+  }
+
+  .formGroup {
+    gap: 10px;
+  }
+
+  .input {
+    padding: 14px;
+    font-size: 15px;
+    height: 52px;
+  }
+
+  .textarea {
+    min-height: 150px;
+  }
+
+  .submitButton {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .indicator,
+  .questionCard,
+  .navButton,
+  .input,
+  .submitButton {
+    transition: none;
+  }
 }

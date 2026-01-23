@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel"
 
 import { questions } from "../constants"
+import styles from "../styles/faq.module.css"
 import Question from "./question"
 
 const Questions = () => {
@@ -32,7 +33,7 @@ const Questions = () => {
   }, [api])
 
   return (
-    <div className="mx-auto w-full card pt-8 md:px-5 h-full flex flex-col">
+    <div className={styles.questionsContainer}>
       <Carousel
         orientation="vertical"
         setApi={setApi}
@@ -42,41 +43,28 @@ const Questions = () => {
           align: "start",
         }}
       >
-        <div className="flex justify-around items-center shrink-0 mb-10">
-          <CarouselPrevious className="static md:!size-12 !size-fit translate-y-0" />
+        <div className={styles.navigation}>
+          <CarouselPrevious className={styles.navButton} />
 
-          <div className="flex w-40 h-14 px-5 py-2.5 justify-between items-center shrink-0 rounded-2xl bg-[#0F0F0F] border-b border-[#0F0F0F]">
+          <div className={styles.indicators}>
             {Array.from({ length: count }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
                 className={cn(
-                  "h-6 w-1 rounded-full border-2 transition-all duration-300",
-                  current === index + 1
-                    ? "border-primary bg-primary scale-110"
-                    : "border-muted-foreground/30 hover:border-muted-foreground/60"
+                  styles.indicator,
+                  current === index + 1 ? styles.indicatorActive : ""
                 )}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
-          <CarouselNext className="static md:!size-12 !size-fit translate-y-0 carousel-button" />
+          <CarouselNext className={styles.navButton} />
         </div>
         <CarouselContent className="-mt-1 max-h-[700px]">
           {questions.map((question, index) => (
             <CarouselItem key={index} className="pt-1 md:basis-1/2">
-              <div className="p-1">
-                <div
-                  className={cn(
-                    "transition-all pb-1 duration-500 ease-[cubic-bezier(0.42,0,1,1)]",
-                    current === index + 1
-                      ? "opacity-100 scale-100 pointer-events-auto"
-                      : "opacity-20 scale-95 pointer-events-none"
-                  )}
-                >
-                  <Question key={question.id} question={question} />
-                </div>
-              </div>
+              <Question question={question} isActive={current === index + 1} />
             </CarouselItem>
           ))}
         </CarouselContent>
