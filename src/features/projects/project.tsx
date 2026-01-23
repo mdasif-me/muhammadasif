@@ -3,7 +3,6 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Quote } from "@/components"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -14,7 +13,7 @@ import styles from "./styles/project.module.css"
 gsap.registerPlugin(ScrollTrigger)
 
 const Project = ({ project }: { project: IProject }) => {
-  const { id, name, description, price, url, images } = project
+  const { id, name, overview, price, url, images } = project
   const containerRef = useRef<HTMLDivElement>(null)
   const imageRefs = useRef<(HTMLDivElement | null)[]>([])
 
@@ -41,7 +40,6 @@ const Project = ({ project }: { project: IProject }) => {
         "-=0.4"
       )
 
-      // Attach hover animations with proper cleanup to avoid memory leaks
       const hoverCleanup: Array<{
         ref: Element
         onEnter: EventListener
@@ -65,7 +63,6 @@ const Project = ({ project }: { project: IProject }) => {
           hoverCleanup.push({ ref, onEnter, onLeave, tl: hoverTl })
         }
       })
-      // Cleanup function to remove listeners and kill timelines
       return () => {
         hoverCleanup.forEach(({ ref, onEnter, onLeave, tl }) => {
           ref.removeEventListener("mouseenter", onEnter)
@@ -85,13 +82,27 @@ const Project = ({ project }: { project: IProject }) => {
       <article className={`${styles["project-card"]} w-full project-content`}>
         <header className="flex flex-wrap gap-3 items-center justify-between self-stretch">
           <p className="gradient-text text-xl font-semibold">{name}</p>
-          <Link href={url} target="_blank">
-            <Quote isBordered text="Get a quote" />
+          <Link
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="z-10 flex items-center group gap-3"
+          >
+            <Image
+              src={"/arrow-border.svg"}
+              alt="View Live"
+              width={120}
+              height={120}
+              priority
+              draggable={false}
+              className="w-auto h-auto group-hover:rotate-45 duration-300 ease-in-out"
+            />
+            <p className="text-xl uppercase duration-300 ease-in-out">
+              View Live
+            </p>
           </Link>
         </header>
-        <p className="description text-gray-300 leading-relaxed">
-          {description}
-        </p>
+        <p className="description text-gray-300 leading-relaxed">{overview}</p>
         <h4 className="header flex w-full justify-end text-lg font-medium text-white/80">
           Starts from {price}
         </h4>
@@ -101,8 +112,22 @@ const Project = ({ project }: { project: IProject }) => {
           <p className="gradient-text uppercase text-sm tracking-wider">
             Gallery
           </p>
-          <Link href={`/projects/${id}`}>
-            <Quote isBordered text="View full case study" />
+          <Link
+            href={`/projects/${id}`}
+            className="z-10 flex items-center group gap-3"
+          >
+            <Image
+              src={"/arrow-border.svg"}
+              alt="View Details"
+              width={120}
+              height={120}
+              priority
+              draggable={false}
+              className="w-auto h-auto group-hover:rotate-45 duration-300 ease-in-out"
+            />
+            <p className="text-xl uppercase duration-300 ease-in-out">
+              View Details
+            </p>
           </Link>
         </header>
         <div

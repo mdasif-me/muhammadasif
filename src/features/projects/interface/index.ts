@@ -1,8 +1,11 @@
 export interface IProject {
   id: string
   name: string
+  type: string
+  techStack: string[]
+  overview: string
+  businessImpact: string
   url: string
-  description: string
   price: string
   images: string[]
   problem?: string
