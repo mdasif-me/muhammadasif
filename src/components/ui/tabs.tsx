@@ -94,16 +94,16 @@ const TabsTrigger: React.FC<TabsTriggerProps> = ({
     <button
       onClick={() => setActiveTab(value)}
       className={cn(
-        "inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-2 font-medium transition-all duration-300 ease-[cubic-bezier(0.42,0,1,1)]",
+        "cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-2 font-medium transition-all duration-300 ease-[cubic-bezier(0.42,0,1,1)]",
         "disabled:pointer-events-none disabled:opacity-50",
         "w-auto min-h-[40px] sm:min-h-0",
         isActive
           ? isBackground
-            ? "bg-background px-6 py-4 rounded-[12px] text-foreground text-sm sm:text-2xl font-medium uppercase"
+            ? "bg-primary px-6 py-4 rounded-[12px] text-foreground text-sm sm:text-2xl font-medium uppercase"
             : "bg-transparent text-[#A7BEB4] text-sm sm:text-lg font-medium uppercase"
           : isBackground
-          ? "bg-transparent px-6 py-4 rounded-[12px] text-foreground text-sm sm:text-2xl font-medium uppercase"
-          : "bg-secondary-foreground text-[#E1EAE5] text-sm sm:text-lg font-medium uppercase",
+            ? "bg-transparent px-6 py-4 rounded-[12px] text-foreground text-sm sm:text-2xl font-medium uppercase"
+            : "bg-secondary-foreground text-[#E1EAE5] text-sm sm:text-lg font-medium uppercase",
         className
       )}
     >
