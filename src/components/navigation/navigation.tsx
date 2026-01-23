@@ -11,11 +11,11 @@ import { Menu } from "./menu"
 
 const Navigation = () => {
   return (
-    <nav>
-      <div className="flex justify-center fixed w-full top-7 z-50">
+    <nav className="w-11/12 mx-auto">
+      <div className="flex justify-center fixed min-w-11/12 top-7 z-50">
         <section className={`${styles.navigation} gap-1 container mx-auto`}>
           <p className={styles.logo}>Asif</p>
-          <ul className={`${styles.menus} md:flex hidden`}>
+          <ul className={`${styles.menus} md:flex! hidden!`}>
             {menus.map((menu) => (
               <Menu key={menu.name} menu={menu} />
             ))}
