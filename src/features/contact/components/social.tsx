@@ -15,10 +15,6 @@ interface SocialProps {
   iconHeight?: number
 }
 
-/**
- * @param {SocialProps} props - The properties for the Social component
- * @return {JSX.Element} A JSX element containing the social media link card
- */
 const Social = ({
   name,
   href,
@@ -29,9 +25,9 @@ const Social = ({
   iconHeight = 34,
 }: SocialProps): JSX.Element => {
   return (
-    <div className={`card p-6 w-full h-full flex flex-col ${className}`}>
-      <div className="flex items-center justify-between w-full">
-        <div className={`${styles["contact-card-logo"]} w-fit`}>
+    <div className={`${styles.socialCard} ${className}`}>
+      <div className={styles.socialHeader}>
+        <div className={styles.iconContainer}>
           <HugeiconsIcon
             className="text-primary shrink-0"
             width={iconWidth}
@@ -44,8 +40,8 @@ const Social = ({
         </Link>
       </div>
       <div className="flex-1"></div>
-      <article className="flex flex-col gap-3">
-        <h1 className={styles.title}>{name}</h1>
+      <article className={styles.socialContent}>
+        <h1 className="gradient-text uppercase">{name}</h1>
         <p className="description">{description}</p>
       </article>
     </div>

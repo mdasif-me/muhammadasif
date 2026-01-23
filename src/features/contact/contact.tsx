@@ -70,7 +70,7 @@ const Contact = () => {
                       href={social.href}
                       description={social.description || ""}
                       icon={social.icon}
-                      className="h-full transition-transform duration-300 hover:-translate-y-1"
+                      className="h-full"
                     />
                   </div>
                 )

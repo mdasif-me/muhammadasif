@@ -1,53 +1,223 @@
-.contact-card-logo {
+/* Banner Section */
+.banner {
+  padding: 32px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.banner:hover {
+  border-color: rgba(62, 93, 82, 0.3);
+}
+
+.bannerContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+}
+
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.bannerTitle {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a7beb4;
+  margin: 0;
+}
+
+.bannerLink {
+  flex-shrink: 0;
+}
+
+/* Social Card */
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.socialCard:hover {
+  border-color: rgba(62, 93, 82, 0.3);
+}
+
+.socialHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.iconContainer {
   display: flex;
   padding: 16px;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
-  border: 1px solid #272727;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   background: #272727;
 }
 
-.contact-card .title {
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 42px */
-  text-transform: uppercase;
-  background: linear-gradient(
-    133deg,
-    #fff -47.63%,
-    #fff -12.48%,
-    #fff 6.3%,
-    #3e5d52 93.99%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.socialContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.header {
+/* Quick Connect */
+.quickConnect {
+  padding: 32px;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quickConnectContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quickConnectInner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.quickConnectHeader {
   text-align: center;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 54px */
-  background: linear-gradient(
-    133deg,
-    #fff -47.63%,
-    #fff -12.48%,
-    #fff 6.3%,
-    #3e5d52 93.99%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-@media (max-width: 480px) {
-  .header {
-    font-size: 28px;
+.quickConnectButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 384px;
+  margin: 0 auto;
+}
+
+.connectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 24px;
+  background: #3e5d52;
+  color: #e1eae5;
+  border: none;
+  border-radius: 12px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.connectButton:hover {
+  background: #4a6f61;
+}
+
+.connectButtonSecondary {
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.connectButtonSecondary:hover {
+  background: #1a1a1a;
+  border-color: rgba(62, 93, 82, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .banner,
+  .socialCard,
+  .quickConnect {
+    padding: 24px;
+  }
+
+  .bannerContent {
+    gap: 20px;
+  }
+
+  .bannerText {
+    gap: 12px;
+  }
+
+  .bannerTitle {
+    font-size: 20px;
+  }
+
+  .bannerLink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialCard {
+    padding: 24px;
+  }
+
+  .socialHeader {
+    margin-bottom: 20px;
+  }
+
+  .iconContainer {
+    padding: 12px;
+  }
+
+  .quickConnect {
+    margin-top: 24px;
+  }
+
+  .quickConnectInner {
+    gap: 32px;
+  }
+
+  .quickConnectButtons {
+    gap: 16px;
+  }
+
+  .connectButton {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner,
+  .socialCard,
+  .connectButton {
+    transition: none;
   }
 }
