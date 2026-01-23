@@ -6,6 +6,7 @@ export interface IProject {
   overview: string
   businessImpact: string
   url: string
+  status: "Completed" | "In Progress" | "On Hold"
   price: string
   images: string[]
   problem?: string

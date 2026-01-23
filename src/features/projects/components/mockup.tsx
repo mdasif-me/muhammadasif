@@ -12,14 +12,15 @@ export const Mockup = () => {
             {project.images &&
               project.images.length > 0 &&
               project.images.map((imgSrc, imgIdx) => (
-                <Image
-                  key={imgIdx}
-                  src={imgSrc}
-                  alt={`${project.name} screenshot ${imgIdx + 1}`}
-                  width={1024}
-                  height={576}
-                  className="rounded-2xl w-fit h-auto object-cover object-center"
-                />
+                <div key={imgIdx} className="max-h-[600px] overflow-auto">
+                  <Image
+                    src={imgSrc}
+                    alt={`${project.name} screenshot ${imgIdx + 1}`}
+                    width={1024}
+                    height={576}
+                    className="rounded-2xl w-full object-cover object-top"
+                  />
+                </div>
               ))}
           </div>
         </div>

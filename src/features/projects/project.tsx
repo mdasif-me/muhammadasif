@@ -147,7 +147,7 @@ const Project = ({ project }: { project: IProject }) => {
                 alt={name}
                 width={1024}
                 height={243}
-                className="lg:h-72 h-60 w-full object-cover object-center transition-transform duration-500 will-change-transform"
+                className="lg:h-72 h-60 w-full object-cover object-top transition-transform duration-500 will-change-transform"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 image-overlay" />
             </div>

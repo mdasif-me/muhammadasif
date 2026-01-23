@@ -14,7 +14,8 @@ import styles from "./styles/project.module.css"
 
 const ProjectDetails = ({ project }: { project: IProject }) => {
   const router = useRouter()
-  const { name, type, overview, price, url, images, techStack } = project
+  const { name, type, overview, price, url, status, images, techStack } =
+    project
   const containerRef = useRef<HTMLDivElement>(null)
 
   useGSAP(
@@ -208,7 +209,7 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-primary" />
                   <p className="text-sm font-medium text-foreground/80">
-                    Completed
+                    {status}
                   </p>
                 </div>
               </div>
@@ -234,7 +235,7 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
                     src={image}
                     alt={`${name} screenshot ${idx + 1}`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className={styles["image-overlay"]} />
                 </div>

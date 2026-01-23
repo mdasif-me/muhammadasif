@@ -2,16 +2,53 @@ import { IProject } from "../interface"
 
 export const projects: IProject[] = [
   {
-    id: "1",
+    id: "aungsha",
+    name: "Aungsha",
+    type: "Digital Real Estate Investment Platform",
+    status: "In Progress",
+    role: "Frontend Software Engineer",
+    techStack: [
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "TanStack Query",
+      "Tailwind CSS",
+      "Next I18n",
+      "GraphQL",
+    ],
+    price: "$1400",
+    url: "http://aungsha.com/",
+    images: [
+      "/images/projects/aungsha/hero.png",
+      "/images/projects/aungsha/about.png",
+    ],
+    overview:
+      "Aungsha is a digital real estate investment platform built to make property investing more accessible, transparent, and secure. The platform allows investors to explore vetted real estate projects, review clear financial details, and invest digitally with confidence. By removing traditional barriers such as high entry costs, limited information access, and manual processes, Aungsha introduces a modern, structured approach to real estate investment focused on long-term value and responsible growth.",
+    problem:
+      "Traditional real estate investing often involves high capital requirements, limited transparency, fragmented information, and reliance on manual or offline processes. Many potential investors struggle to access verified projects, understand investment timelines, or track progress after investing. This lack of clarity creates trust issues, increases risk, and discourages long-term participation in real estate markets.",
+    approach:
+      "The platform was designed with a strong emphasis on clarity, trust, and usability. I focused on building a clean, intuitive frontend experience that clearly communicates project details, investment structures, timelines, and progress updates. Close collaboration with stakeholders ensured that real-world investor concerns were reflected in the interface. The frontend architecture was planned for scalability, multilingual support, and long-term maintainability, enabling future expansion as the platform grows.",
+    solution:
+      "Aungsha delivers a secure digital investment experience where users can explore carefully vetted real estate projects, access transparent financial data, and complete investments through structured digital flows. The platform presents clear project descriptions, investment terms, timelines, and ongoing updates. Secure infrastructure and verified transaction processes protect investor data and records, while a responsive, accessible UI ensures usability across devices. The system prioritizes long-term, responsible investment opportunities over short-term speculation.",
+    results:
+      "The platform provides investors with a clear understanding of where and how their money is invested, improving confidence and decision-making. Users benefit from simplified onboarding, transparent project visibility, and structured investment tracking. Early adoption shows strong engagement from investors seeking a trustworthy digital alternative to traditional real estate investment methods.",
+    businessImpact:
+      "Aungsha connects capital with carefully selected real estate projects, supporting responsible development and long-term value creation. The platform helps developers reach qualified investors while offering investors a reliable, transparent way to participate in real estate growth. By digitizing the investment process, Aungsha reduces operational friction, increases trust, and strengthens participation in the real estate investment ecosystem.",
+    learning:
+      "This project reinforced the importance of trust-driven design, clear information architecture, and transparency when building financial and investment platforms. It highlighted how thoughtful UI, structured data presentation, and secure digital flows directly influence user confidence and long-term platform adoption.",
+  },
+  {
+    id: "digital-librarium",
     name: "Digital Librarium",
     type: "Institutional Software Platform",
     role: "Full Stack Developer",
+    status: "Completed",
     techStack: ["Next.js", "Tailwind CSS", "REST APIs", "Database Design"],
     price: "$120",
     url: "https://www.digitallibrarium.com/",
     images: [
-      "/images/projects/digital-library-website-hero.png",
-      "/images/projects/digital-library-projects.png",
+      "/images/projects/dl/digital-library-website-hero.png",
+      "/images/projects/dl/digital-library-projects.png",
     ],
     overview:
       "Digital Librarium is a modern, production-ready library automation platform built to help educational institutions, corporate libraries, and public organizations transition from manual, paper-based operations to a fully digital system. The platform is designed with a strong focus on performance, security, and scalability, enabling institutions to manage books, members, visitors, and access control from a single, centralized system. By replacing outdated workflows with streamlined digital processes, Digital Librarium significantly improves operational efficiency and data accuracy.",
@@ -29,10 +66,11 @@ export const projects: IProject[] = [
       "This project reinforced the importance of building offline-aware and resilient systems for institutions operating in regions with unstable or limited internet connectivity.",
   },
   {
-    id: "2",
+    id: "document-management-system",
     name: "Document Management System (DMS)",
     type: "Enterprise SaaS Application",
     role: "Frontend Software Engineer",
+    status: "Completed",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -42,8 +80,8 @@ export const projects: IProject[] = [
     price: "$800",
     url: "https://dms.intertechbd.com/",
     images: [
-      "/images/projects/document-management-system-files.png",
-      "/images/projects/document-management-system-repository.png",
+      "/images/projects/dms/document-management-system-files.png",
+      "/images/projects/dms/document-management-system-repository.png",
     ],
     overview:
       "The Document Management System is an enterprise-grade web application designed to help organizations securely store, organize, and manage large volumes of business-critical documents. The frontend was built with a strong emphasis on performance, usability, and access control, ensuring that employees can quickly locate and work with documents while maintaining compliance and data security. The system is tailored for corporate environments where reliability, scalability, and clear permission boundaries are essential for daily operations.",
@@ -61,16 +99,17 @@ export const projects: IProject[] = [
       "This project emphasized the importance of performance optimization techniques such as virtualization, caching, and structured state management in large-scale enterprise applications.",
   },
   {
-    id: "3",
+    id: "lets-chat",
     name: "Let's Chat",
     type: "Cross-Platform Communication Application",
     role: "Frontend Software Engineer",
+    status: "Completed",
     techStack: ["Next.js", "Electron.js", "WebSockets"],
     price: "$500",
     url: "https://dms.intertechbd.com",
     images: [
-      "/images/projects/lets-chat-dashboard.png",
-      "/images/projects/lets-chat-gallery.png",
+      "/images/projects/lc/lets-chat-dashboard.png",
+      "/images/projects/lc/lets-chat-gallery.png",
     ],
     overview:
       "Let's Chat is a cross-platform, real-time messaging application developed to provide fast, secure, and reliable communication across both web and desktop environments. Built using a single shared codebase, the application delivers a consistent user experience while supporting real-time messaging, file sharing, and secure authentication. The product is suitable for personal communication as well as professional team collaboration where speed, privacy, and stability are critical.",
