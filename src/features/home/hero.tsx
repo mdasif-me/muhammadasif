@@ -28,6 +28,7 @@ const Hero = () => {
             width={120}
             height={120}
             priority
+            draggable={false}
             className="w-auto h-auto group-hover:rotate-[24deg] duration-300 ease-in-out"
           />
           <p className="text-xl group-hover:pt-6 duration-300 ease-in-out">
@@ -58,6 +59,7 @@ const Hero = () => {
             width={120}
             height={120}
             priority
+            draggable={false}
             className="w-auto h-auto group-hover:rotate-45 duration-300 ease-in-out"
           />
           <p className="text-xl uppercase duration-300 ease-in-out">See more</p>

@@ -230,7 +230,12 @@
   flex-shrink: 0;
   border-radius: 16px;
   background: #1a1a1a;
-  transition: all 10s ease;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .background_profile {
