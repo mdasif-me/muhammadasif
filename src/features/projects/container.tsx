@@ -22,7 +22,7 @@ export default function Container() {
         <TabsContent value="gallery" className="flex-1">
           <div className="mt-9 border-wrapper md:p-5 p-1 md:space-y-10 space-y-3">
             <Header name="LATEST DEVELOPMENTS" />
-            <Projects />
+            <Projects showAll />
           </div>
         </TabsContent>
         <TabsContent value="snapshots" className="flex-1">

@@ -38,6 +38,78 @@ export const projects: IProject[] = [
       "This project reinforced the importance of trust-driven design, clear information architecture, and transparency when building financial and investment platforms. It highlighted how thoughtful UI, structured data presentation, and secure digital flows directly influence user confidence and long-term platform adoption.",
   },
   {
+    id: "bms",
+    name: "Biswas Management Software (BMS)",
+    type: "Construction Management & Monitoring Platform",
+    role: "Frontend Software Engineer",
+    status: "On Hold",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Mapbox GL JS",
+      "3D Map Visualization",
+      "Tailwind CSS",
+      "GraphQL",
+      "State Management",
+    ],
+    price: "$2200",
+    url: "",
+    images: [
+      "/images/projects/bms/login.png",
+      "/images/projects/bms/dashboard.png",
+    ],
+    overview:
+      "Biswas Management Software (BMS) is a comprehensive construction management platform designed to manage the entire building lifecycle from pre-agreement stages to final asset handover. The system centralizes project workflows, financial controls, material tracking, and real-time site monitoring into a single digital solution. With advanced 3D map visualization and intelligent fraud detection, BMS enables management teams to maintain full visibility, accountability, and control across complex construction projects.",
+    problem:
+      "Construction projects often suffer from fragmented processes, manual reporting, limited site visibility, and delayed detection of financial or material discrepancies. Senior management typically relies on delayed reports, making it difficult to identify risks, fraud, or project delays in real time. Lack of role-based accountability and disconnected workflows further increase operational inefficiencies and cost overruns.",
+    approach:
+      "The platform was architected to reflect real-world construction workflows and approval chains. I focused on building a role-driven interface where each stakeholder sees relevant data, actions, and alerts based on their responsibility. Special emphasis was placed on real-time visualization, budget intelligence, and step-by-step process enforcement to ensure that no phase of construction is skipped or mismanaged. The frontend was designed for scalability, performance, and clarity in high-data environments.",
+    solution:
+      "BMS delivers a modular construction management system covering every stage of the building process. The platform includes structured workflows such as Before Agreement, Land Verification, Agreement Meetings, Agreement Finalization, After Agreement processes, and Role Selection. A centralized dashboard provides real-time project insights, including task progress, financial health, and automated fraud alerts based on budget benchmarks, bill submissions, and BBQ comparisons. Real-time project locations are visualized using Mapbox with 3D views, enabling management to monitor site progress geographically. The system also manages project tasks, material requests, finance tracking, purchasing, inventory control, bill submissions, document management, and asset tracking through a unified interface.",
+    results:
+      "The system enabled management teams to detect budget anomalies and operational risks at early stages through automated fraud alerts and real-time data visualization. Project transparency improved significantly, reducing dependency on manual reporting. Teams experienced faster decision-making, clearer accountability, and improved coordination across departments.",
+    businessImpact:
+      "BMS helps construction firms reduce financial leakage, prevent fraud, and maintain tighter control over large-scale projects. By digitizing workflows and enforcing structured processes, the platform minimizes human error, improves compliance, and increases overall project efficiency. Real-time insights empower leadership to make informed decisions, protecting both timelines and budgets.",
+    learning:
+      "This project strengthened my understanding of domain-driven UI design for complex enterprise systems. It highlighted the importance of data visualization, role-based access control, and proactive alert systems when building software for high-risk, high-cost industries like construction.",
+  },
+  {
+    id: "property-chain-platform",
+    name: "Property Chain",
+    type: "PropTech SaaS Platform",
+    role: "Frontend Software Engineer",
+    status: "In Progress",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "GraphQL",
+      "State Management",
+      "QR Code Integration",
+      "Responsive Web Architecture",
+    ],
+    price: "$1800",
+    url: "",
+    images: [
+      "/images/projects/pms/dashboard.png",
+      "/images/projects/pms/project-view.png",
+    ],
+    overview:
+      "This platform is a comprehensive property sales and chain management system designed to digitally manage complex real estate transactions across web and mobile applications. It centralizes property listings, sales workflows, agent operations, revenue tracking, and approvals while managing interconnected property chains where multiple buyers and sellers depend on one another. The system introduces transparency, traceability, and real-time status monitoring to reduce transaction risk and sales collapse.",
+    problem:
+      "Traditional property transactions often rely on disconnected tools, manual verification, and delayed communication between agents, clients, and management. Property chains are especially fragile, where a single delay in approval, documentation, or payment can break the entire sequence and collapse multiple sales. Additionally, verifying the authenticity of property sales and preventing fraudulent listings remains a major challenge in real estate operations.",
+    approach:
+      "The software was designed as a unified digital ecosystem connected across a website and mobile applications. I focused on creating a role-based experience for administrators, sales agents, employees, and clients, ensuring each user has clear visibility into their responsibilities and transaction status. The UI architecture emphasizes real-time updates, traceable workflows, and frictionless navigation across complex sales pipelines.",
+    solution:
+      "The platform manages the entire property sales lifecycle, including dashboards, projects, sales tracking, revenue management, agents and employees, client records, withdrawals, approvals, and system settings. Property chain logic links dependent transactions together, allowing management to monitor chain health and identify risks early. Every sale is verified through a QR code system, enabling instant validation of original property records, transaction authenticity, and approval status via web or mobile scanning. This ensures trust, reduces fraud, and accelerates decision-making.",
+    results:
+      "The system significantly reduced failed transactions caused by broken property chains by improving visibility and early risk detection. Sales verification became faster and more reliable through QR-based validation. Teams reported improved coordination between agents, management, and clients, resulting in smoother transaction flows and higher deal completion rates.",
+    businessImpact:
+      "This platform helps real estate companies protect revenue, improve sales reliability, and build trust with clients. By digitizing approvals, tracking dependencies, and verifying transactions, the software minimizes fraud, operational delays, and costly deal collapses. The result is a more resilient, transparent, and scalable real estate sales operation.",
+    learning:
+      "This project deepened my understanding of transactional systems, dependency-based workflows, and trust mechanisms in real estate software. It reinforced the importance of real-time state synchronization, role-based access control, and verification layers when building high-stakes financial platforms.",
+  },
+  {
     id: "digital-librarium",
     name: "Digital Librarium",
     type: "Institutional Software Platform",
