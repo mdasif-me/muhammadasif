@@ -10,6 +10,18 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.project-hero-container {
+  background: url("/images/projects/project-hero-container.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .project-card:hover {
   background: rgba(26, 26, 26, 0.8);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);

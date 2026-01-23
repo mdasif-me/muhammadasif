@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { useGSAP } from "@gsap/react"
 import { ArrowLeft01Icon } from "@hugeicons-pro/core-stroke-standard"
 import { HugeiconsIcon } from "@hugeicons/react"
@@ -12,6 +13,7 @@ import { IProject } from "./interface"
 import styles from "./styles/project.module.css"
 
 const ProjectDetails = ({ project }: { project: IProject }) => {
+  const router = useRouter()
   const { name, type, overview, price, url, images, techStack } = project
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -48,7 +50,8 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
     >
       <div className="xl:space-y-8 space-y-6">
         <Link
-          href="/#projects"
+          href="#" // Add a placeholder href
+          onClick={() => router.back()}
           className="animate-in inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
         >
           <HugeiconsIcon
