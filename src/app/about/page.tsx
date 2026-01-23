@@ -15,7 +15,7 @@ export const metadata: Metadata = aboutMetadata
  */
 export default function About(): JSX.Element {
   return (
-    <div className="relative mb-20">
+    <div className="relative mb-40">
       <Hero />
       <Skills
         is_vertical={true}
