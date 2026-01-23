@@ -21,7 +21,7 @@ export default function TechStack() {
 
   return (
     <div>
-      <div className="relative w-fit shrink-0 mt-16 sm:mt-20 px-8">
+      <div className="relative w-fit shrink-0 mt-16 sm:mt-20 px-8 md:px-24">
         <Image
           src="/images/about/line-freehand-second.svg"
           alt="Decorative line graphic"
@@ -31,7 +31,7 @@ export default function TechStack() {
           priority
           draggable={false}
         />
-        <h4 className="absolute left-10 xs:left-4 bottom-12 xs:bottom-14 sm:bottom-16 text-xl xs:text-2xl font-semibold uppercase text-secondary">
+        <h4 className="absolute left-10 md:left-32 bottom-12 xs:bottom-14 sm:bottom-16 text-xl xs:text-2xl font-semibold uppercase text-secondary">
           My Tech stack
         </h4>
       </div>

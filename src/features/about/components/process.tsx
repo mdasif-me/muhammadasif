@@ -32,7 +32,7 @@ function ProcessArrow({
  */
 export default function Process(): JSX.Element {
   return (
-    <div className="px-8">
+    <div className="px-8 md:px-24">
       <div className="flex lg:flex-row flex-col items-center lg:justify-between justify-center">
         <div className="relative w-fit shrink-0 lg:mt-0 mt-16 sm:mt-20">
           <Image
@@ -50,7 +50,7 @@ export default function Process(): JSX.Element {
         </div>
         <div className="lg:mt-80 mt-16 sm:mt-20">
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`First, I want to fully understand the project by determining what it needs, whether it's feasible, and what you hope to achieve.`}
+            {`Discovery & Planning: I collaborate with stakeholders to understand requirements, define project scope, assess technical feasibility, and establish clear milestones and deliverables.`}
           </h4>
           <ProcessArrow />
         </div>
@@ -59,7 +59,7 @@ export default function Process(): JSX.Element {
         <div></div>
         <div>
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`Then, I conceptualize and design the software's architecture, user interface, and overall user experience.`}
+            {`Architecture & Design: I design scalable system architecture, create technical specifications, plan database schemas, and craft intuitive user interfaces aligned with best practices.`}
           </h4>
           <ProcessArrow
             rotation="-rotate-80"
@@ -70,7 +70,7 @@ export default function Process(): JSX.Element {
       <div className="flex items-center lg:justify-between justify-center mt-4 sm:mt-0">
         <div>
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`Next, I develop and implement the code, constructing the software according to the design specifications.`}
+            {`Development: I write clean, maintainable code following industry standards, implement version control, conduct peer code reviews, and ensure documentation for future reference.`}
           </h4>
           <ProcessArrow />
         </div>
@@ -79,7 +79,7 @@ export default function Process(): JSX.Element {
       <div className="flex items-center lg:justify-between justify-center mt-4 sm:mt-0">
         <div>
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`Then, I perform comprehensive testing, identify and fix any issues, and ensure it meets our high standards.`}
+            {`Testing & QA: I perform comprehensive testing including unit tests, integration tests, and end-to-end testing, ensuring code quality, security, and performance optimization.`}
           </h4>
           <ProcessArrow
             rotation="-rotate-80"
@@ -92,7 +92,7 @@ export default function Process(): JSX.Element {
         <div></div>
         <div>
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`Next, I deploy the software to its live environment and ensure everything runs smoothly across all systems.`}
+            {`Deployment: I implement CI/CD pipelines, execute staged rollouts with proper environment configuration, verify deployment success, and maintain rollback strategies for safety.`}
           </h4>
           <ProcessArrow justify="lg:justify-start justify-center" />
         </div>
@@ -100,7 +100,7 @@ export default function Process(): JSX.Element {
       <div className="flex items-center lg:justify-between justify-center mt-4 sm:mt-0">
         <div>
           <h4 className="gradient-text text-base! md:text-xl! font-normal! md:font-bold! !normal-case max-w-4xl px-2 md:px-0">
-            {`And finally, I continuously monitor performance, gather user feedback, and refine the product to keep it efficient, reliable, and aligned with user needs.`}
+            {`Monitoring & Support: I continuously monitor system performance, track errors, gather user feedback, implement improvements, and provide ongoing maintenance to ensure long-term success.`}
           </h4>
         </div>
         <div></div>
