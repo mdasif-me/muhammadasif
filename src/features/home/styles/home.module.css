@@ -233,11 +233,6 @@
   transition: all 0.3s ease;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
 .background_profile {
   width: 100%; /* 433px */
   height: 540px;
