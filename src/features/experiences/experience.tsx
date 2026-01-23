@@ -70,29 +70,32 @@ const Experience = ({ experience }: { experience: IExperience }) => {
           </article>
         </div>
         <div className="md:space-y-3 space-y-1">
-          <article className="w-fit">
-            <p
-              className={`${styles.chip} flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
-            >
-              <span className="description">Company: </span>
-              {experience.company}
-            </p>
+          <article
+            className={`${styles.chip} w-fit flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
+          >
+            <div className="description flex items-center gap-2">
+              Organization
+              <div className={`w-2 h-2 bg-primary rounded-full`} />
+            </div>
+            {experience.company}
           </article>
-          <article className="w-fit">
-            <p
-              className={`${styles.chip} flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
-            >
-              <span className="description">Industry: </span>
-              {experience.industry}
-            </p>
+          <article
+            className={`${styles.chip} w-fit flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
+          >
+            <div className="description flex items-center gap-2">
+              Industry
+              <div className={`w-2 h-2 bg-primary rounded-full`} />
+            </div>
+            {experience.industry}
           </article>
-          <article className="w-fit">
-            <p
-              className={`${styles.chip} flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
-            >
-              <span className="description">Skills: </span>
-              {experience.skills.join(", ")}
-            </p>
+          <article
+            className={`${styles.chip} w-fit flex flex-wrap text-[#DCE5E1] md:text-lg text-sm items-center gap-1 font-medium`}
+          >
+            <div className="description flex items-center gap-2">
+              Skills
+              <div className={`w-2 h-2 bg-primary rounded-full`} />
+            </div>
+            {experience.skills.join(", ")}
           </article>
         </div>
       </div>

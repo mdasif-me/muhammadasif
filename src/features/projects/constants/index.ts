@@ -46,19 +46,19 @@ export const projects: IProject[] = [
       "/images/projects/document-management-system-repository.png",
     ],
     overview:
-      "This project involved building a high-performance, enterprise-grade frontend for a Document Management System used by corporate teams to securely store, organize, and retrieve business-critical documents. The frontend was designed to handle large volumes of files while maintaining fast response times, intuitive navigation, and strict access control policies suitable for enterprise environments.",
+      "The Document Management System is an enterprise-grade web application designed to help organizations securely store, organize, and manage large volumes of business-critical documents. The frontend was built with a strong emphasis on performance, usability, and access control, ensuring that employees can quickly locate and work with documents while maintaining compliance and data security. The system is tailored for corporate environments where reliability, scalability, and clear permission boundaries are essential for daily operations.",
     problem:
-      "Corporate users struggled with slow document retrieval, poorly organized file structures, unclear permission settings, and low adoption of legacy document systems. These issues reduced productivity and increased the risk of mismanaged or unauthorized document access.",
+      "Organizations were relying on legacy document systems that were slow, difficult to navigate, and poorly structured. Users faced long search times, unclear access permissions, and inconsistent file organization, which negatively impacted productivity and increased the risk of unauthorized access or data mismanagement.",
     approach:
-      "I analyzed real user workflows to identify bottlenecks in document discovery and daily usage. The UI was designed around familiar folder-based navigation while optimizing performance for large datasets. Special attention was given to state management, rendering efficiency, and predictable user interactions.",
+      "I closely analyzed how different teams interacted with documents on a daily basis to identify usability and performance bottlenecks. The interface was designed around familiar folder-based patterns while focusing heavily on rendering optimization, predictable state management, and smooth user interactions, even when handling large document repositories.",
     solution:
-      "The frontend includes advanced search and filtering, drag-and-drop file organization, granular role-based permission controls, and optimistic UI updates that provide instant feedback to users. The result is a fast, reliable, and user-friendly document management experience.",
+      "The final frontend solution includes advanced search and filtering, drag-and-drop file management, granular role-based permission control, and optimistic UI updates to ensure instant feedback. These features work together to create a fast, intuitive, and enterprise-ready document management experience.",
     results:
-      "Document retrieval speed improved by 300 percent, and the system achieved a 90 percent user adoption rate within the first week of deployment.",
+      "Document retrieval speed increased by 300 percent, and the platform achieved a 90 percent user adoption rate within the first week of deployment across internal teams.",
     businessImpact:
-      "The solution increased overall team productivity by reducing time spent searching for documents and helped organizations maintain better compliance through improved access control and auditability.",
+      "The system improved team efficiency, reduced operational friction, and strengthened compliance by giving organizations better control and visibility over their document assets.",
     learning:
-      "This project highlighted the importance of virtualization, caching, and structured state management when building enterprise applications that handle large and complex data sets.",
+      "This project emphasized the importance of performance optimization techniques such as virtualization, caching, and structured state management in large-scale enterprise applications.",
   },
   {
     id: "3",
@@ -73,18 +73,18 @@ export const projects: IProject[] = [
       "/images/projects/lets-chat-gallery.png",
     ],
     overview:
-      "Let's Chat is a real-time messaging application built to support both web and desktop platforms using a single shared codebase. The application is designed for secure, low-latency communication and delivers a consistent user experience across devices, making it suitable for both personal use and professional team collaboration.",
+      "Let's Chat is a cross-platform, real-time messaging application developed to provide fast, secure, and reliable communication across both web and desktop environments. Built using a single shared codebase, the application delivers a consistent user experience while supporting real-time messaging, file sharing, and secure authentication. The product is suitable for personal communication as well as professional team collaboration where speed, privacy, and stability are critical.",
     problem:
-      "Users needed a messaging solution that worked seamlessly across desktop and web platforms while maintaining fast message delivery, reliable connectivity, and strong privacy protections.",
+      "Users required a messaging solution that could operate seamlessly across multiple platforms without sacrificing performance, reliability, or privacy. Existing solutions often introduced latency, inconsistent experiences between devices, or limited cross-platform support.",
     approach:
-      "I designed a shared architecture that allowed web and desktop clients to reuse the same core logic. Performance and security were treated as first-class concerns, with a strong emphasis on real-time communication reliability and scalable message handling.",
+      "I designed a shared application architecture that allowed web and desktop clients to reuse the same core logic and UI patterns. Special attention was given to real-time performance, efficient message handling, and maintaining secure communication channels across platforms.",
     solution:
-      "The application supports real-time socket-based messaging, secure authentication, file sharing, encrypted message storage, and cross-platform desktop deployment using Electron. This approach ensured consistent behavior across platforms while reducing development complexity.",
+      "The application was built with real-time socket-based messaging, secure authentication, encrypted message storage, file sharing functionality, and Electron-based desktop deployment. This approach ensured consistent behavior and performance across all supported platforms.",
     results:
-      "The system consistently achieved message latency below 50 milliseconds and was successfully deployed across Windows, macOS, and web platforms using a unified codebase.",
+      "The system consistently delivered message latency below 50 milliseconds and was successfully deployed on Windows, macOS, and web platforms using a unified codebase.",
     businessImpact:
-      "By consolidating multiple platforms into a single codebase, the project reduced development and maintenance costs while enabling faster feature delivery.",
+      "By maintaining a single cross-platform codebase, the project reduced development and maintenance costs while enabling faster iteration and feature delivery.",
     learning:
-      "Building real-time applications requires careful balancing between performance, background processing, and resource usage, particularly on desktop environments.",
+      "This project highlighted the importance of balancing real-time performance with system resource usage, particularly when building desktop applications that run continuously in the background.",
   },
 ]
