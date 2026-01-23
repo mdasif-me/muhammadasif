@@ -33,10 +33,11 @@ export const projectsMetadata: Metadata = {
       "Explore my portfolio of high-quality web development projects. See real-world examples of React.js, Next.js applications.",
     images: [
       {
-        url: "https://muhammadasif.me/og-projects.jpg",
+        url: "https://muhammadasif.me/images/muhammadasif-me.webp",
         width: 1200,
         height: 630,
         alt: "Md. Asif - Projects Portfolio",
+        type: "image/webp",
       },
     ],
   },

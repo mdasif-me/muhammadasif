@@ -14,8 +14,8 @@ const Hero = () => {
    */
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/mdasif_frontend_resume.pdf"
-    link.download = "muhammad-asif-resume.pdf"
+    link.href = "/asif-frontend-resume.pdf"
+    link.download = "asif-frontend-resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

@@ -15,7 +15,7 @@ export const Menu = ({ menu }: { menu: TMenus }) => {
       href={menu.href}
     >
       <li
-        className={`${isActive ? styles.active : styles.menu} transition-all ease-out duration-300 group-hover:!text-[#A7BEB466]`}
+        className={`${isActive ? styles.active : styles.menu} transition-all ease-out duration-300 group-hover:text-[#A7BEB466]!`}
       >
         {menu.name}
       </li>

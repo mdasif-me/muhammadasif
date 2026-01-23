@@ -4,11 +4,11 @@ export function StructuredData() {
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Md. Asif",
+    name: "Muhammad Asif",
     url: "https://muhammadasif.me",
-    image: "https://muhammadasif.me/profile-image.jpg",
+    image: "https://muhammadasif.me/images/muhammadasif-me.webp",
     description:
-      "Expert Frontend & Full-Stack Software Engineer specializing in React.js, Next.js, and TypeScript. I deliver high-performance, responsive web applications.",
+      "Seasoned Mid Level Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks.",
     jobTitle: "Senior Frontend Developer",
     knowsAbout: [
       "React.js",
@@ -41,7 +41,7 @@ export function StructuredData() {
   const businessLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Md. Asif - Web Development",
+    name: "Muhammad Asif - Web Development",
     url: "https://muhammadasif.me",
     description:
       "Professional web development services specializing in React.js and Next.js",

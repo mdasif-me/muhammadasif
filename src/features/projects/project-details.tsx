@@ -79,7 +79,7 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
                   <h3 className="text-xl font-medium text-red-400 mb-4">
                     The Problem
                   </h3>
-                  <p className="description text-start">{project.solution}</p>
+                  <p className="description !text-start">{project.solution}</p>
                   <p className="description text-start">{project.problem}</p>
                 </div>
                 <div className="p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
@@ -104,7 +104,7 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
                   <h3 className="text-xl font-medium text-white mb-4">
                     The Solution
                   </h3>
-                  <p className="description text-start!">{project.solution}</p>
+                  <p className="description !text-start">{project.solution}</p>
                 </div>
               </div>
             )}
@@ -122,7 +122,7 @@ const ProjectDetails = ({ project }: { project: IProject }) => {
                 <h3 className="text-xl font-medium text-purple-400 mb-2">
                   Key Learnings
                 </h3>
-                <p className="description text-start italic!">
+                <p className="description !text-start italic">
                   {`"${project.learning}"`}
                 </p>
               </div>

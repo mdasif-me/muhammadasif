@@ -24,7 +24,7 @@ function ConsultationProfile() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Start WhatsApp consultation call"
-            className={`!border-[#A7BEB4] border !bg-transparent !hover:bg-primary button !w-full flex justify-center items-center mx-auto`}
+            className={`!border-[#A7BEB4] border !bg-transparent hover:!bg-primary button !w-full flex justify-center items-center mx-auto`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

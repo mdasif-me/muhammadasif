@@ -1,6 +1,5 @@
-"use client"
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = 2026
 
   return (
     <footer>

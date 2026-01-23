@@ -64,7 +64,7 @@ const Experience = ({ experience }: { experience: IExperience }) => {
             <p className="description">
               {experience.start} - {experience.end}{" "}
             </p>
-            <p className="gradient-text md:text-2xl !text-xl">
+            <p className="gradient-text md:text-2xl text-xl">
               {experience.title}
             </p>
           </article>

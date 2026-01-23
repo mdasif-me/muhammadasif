@@ -1,15 +1,9 @@
 "use client"
 
-import React, { useState } from "react"
+import React from "react"
 
 const QuestionForm = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [feedbackMessage, setFeedbackMessage] = useState("")
-  const [feedbackType, setFeedbackType] = useState<"success" | "error" | null>(
-    null
-  )
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const form = e.target as HTMLFormElement
     const formData = new FormData(form)
@@ -18,53 +12,18 @@ const QuestionForm = () => {
     const question = formData.get("question")?.toString().trim()
 
     if (!name || !email || !question) {
-      setFeedbackMessage("All fields are required.")
-      setFeedbackType("error")
+      alert("All fields are required.")
       return
     }
 
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 seconds timeout
+    const subject = encodeURIComponent(`Question from ${name}`)
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nQuestion:\n${question}`
+    )
+    const mailtoLink = `mailto:contact@muhammadasif.me?subject=${subject}&body=${body}`
 
-    try {
-      setIsSubmitting(true)
-      setFeedbackMessage("")
-      setFeedbackType(null)
-
-      const response = await fetch("/api/submit-question", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, question }),
-        signal: controller.signal,
-      })
-
-      if (!response.ok) {
-        throw new Error("Failed to submit the question. Please try again.")
-      }
-
-      setFeedbackMessage("Your question has been submitted successfully!")
-      setFeedbackType("success")
-      form.reset()
-    } catch (error) {
-      if (
-        typeof error === "object" &&
-        error !== null &&
-        "name" in error &&
-        error.name === "AbortError"
-      ) {
-        setFeedbackMessage("The request timed out. Please try again.")
-      } else if (error instanceof Error) {
-        setFeedbackMessage(error.message)
-      } else {
-        setFeedbackMessage(String(error) || "An unknown error occurred.")
-      }
-      setFeedbackType("error")
-    } finally {
-      clearTimeout(timeoutId)
-      setIsSubmitting(false)
-    }
+    window.location.href = mailtoLink
+    form.reset()
   }
 
   return (
@@ -124,17 +83,9 @@ const QuestionForm = () => {
         <button
           type="submit"
           className="mt-6 bg-primary text-[#E1EAE5] w-full py-[18px] px-6 shrink-0 rounded-[12px] uppercase text-lg font-medium leading-7"
-          disabled={isSubmitting}
         >
-          {isSubmitting ? "Submitting..." : "Send Message"}
+          Send Message
         </button>
-        {feedbackMessage && (
-          <p
-            className={`mt-4 text-center ${feedbackType === "success" ? "text-green-500" : "text-red-500"}`}
-          >
-            {feedbackMessage}
-          </p>
-        )}
       </form>
     </div>
   )

@@ -21,9 +21,4 @@ export const menus: TMenus[] = [
     href: "/services",
     label: "Check my services",
   },
-  {
-    name: "DOCUMENTARIES",
-    href: "/documentaries",
-    label: "Watch my documentaries",
-  },
 ]

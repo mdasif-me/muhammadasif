@@ -1,5 +1,0 @@
-export { default as Card } from "./card"
-export { Comment } from "./comment"
-export { Content } from "./content"
-export { Header } from "./header"
-export { default as Sidebar } from "./sidebar"

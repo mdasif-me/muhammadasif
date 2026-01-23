@@ -164,7 +164,7 @@ const ServicesSection = () => {
     <div className="pt-20 relative overflow-hidden">
       <div className="relative z-10">
         <div ref={headerRef} className="text-center mb-20">
-          <div className={`w-fit! mx-auto ${styles.chip}`}>
+          <div className={`!w-fit mx-auto ${styles.chip}`}>
             <HugeiconsIcon
               className={styles["icon-glow"]}
               icon={CircleIcon}

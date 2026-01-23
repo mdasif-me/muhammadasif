@@ -43,7 +43,7 @@ const Questions = () => {
         }}
       >
         <div className="flex justify-around items-center shrink-0 mb-10">
-          <CarouselPrevious className="static md:size-12! size-fit! translate-y-0" />
+          <CarouselPrevious className="static md:!size-12 !size-fit translate-y-0" />
 
           <div className="flex w-40 h-14 px-5 py-2.5 justify-between items-center shrink-0 rounded-2xl bg-[#0F0F0F] border-b border-[#0F0F0F]">
             {Array.from({ length: count }).map((_, index) => (
@@ -60,7 +60,7 @@ const Questions = () => {
               />
             ))}
           </div>
-          <CarouselNext className="static md:size-12! size-fit! translate-y-0 carousel-button" />
+          <CarouselNext className="static md:!size-12 !size-fit translate-y-0 carousel-button" />
         </div>
         <CarouselContent className="-mt-1 h-[700px]">
           {questions.map((question, index) => (

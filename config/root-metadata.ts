@@ -2,12 +2,11 @@ import type { Metadata } from "next"
 
 export const rootMetadata: Metadata = {
   title: {
-    default:
-      "Md. Asif | Frontend & Full-Stack Developer | React.js & Next.js Expert",
-    template: "%s | Md. Asif",
+    default: "Muhammad Asif - Software Engineer",
+    template: "%s | Muhammad Asif",
   },
   description:
-    "Expert Frontend & Full-Stack Software Engineer specializing in React.js, Next.js, and TypeScript. I deliver high-performance, responsive web applications with 5+ years of experience. Skilled in REST/GraphQL APIs, Agile development, AWS, and UI/UX optimization. View my portfolio of successful projects.",
+    "Seasoned Mid Level Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks, with a strong focus on accessibility, UX optimization, scalable architecture, and effective problem solving. Spearheaded a project that improved load times by 40%, resulting in a 25% increase in user engagement. Skilled in mentoring junior developers and working with cross-functional teams to deliver innovative solutions.",
   keywords: [
     "frontend developer",
     "React developer",
@@ -72,29 +71,27 @@ export const rootMetadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://muhammadasif.me",
-    title:
-      "Md. Asif | Frontend & Full-Stack Developer | React.js & Next.js Expert",
+    title: "Muhammad Asif - Software Engineer",
     description:
-      "Expert Frontend & Full-Stack Software Engineer specializing in React.js, Next.js, and TypeScript. I deliver high-performance, responsive web applications with 5+ years of experience. Skilled in REST/GraphQL APIs, Agile development, AWS, and UI/UX optimization. View my portfolio of successful projects.",
+      "Seasoned Mid Level Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications.",
     siteName: "Md. Asif - Portfolio",
     images: [
       {
-        url: "https://muhammadasif.me/og-image.jpg",
+        url: "https://muhammadasif.me/images/muhammadasif-me.webp",
         width: 1200,
         height: 630,
-        alt: "Md. Asif - Frontend & Full-Stack Developer",
-        type: "image/jpeg",
+        alt: "Muhammad Asif - Software Engineer",
+        type: "image/webp",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Md. Asif | Frontend & Full-Stack Developer | React.js & Next.js Expert",
+    title: "Muhammad Asif - Software Engineer",
     description:
-      "Expert Frontend & Full-Stack Software Engineer specializing in React.js, Next.js, and TypeScript. View my portfolio of successful projects.",
+      "Seasoned Mid Level Frontend Developer focused on performance and UX.",
     creator: "@mdasif-me",
-    images: ["https://muhammadasif.me/og-image.jpg"],
+    images: ["https://muhammadasif.me/images/muhammadasif-me.webp"],
   },
   robots: {
     index: true,

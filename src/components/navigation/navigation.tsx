@@ -11,11 +11,11 @@ import { Menu } from "./menu"
 
 const Navigation = () => {
   return (
-    <>
-      <nav className={`fixed w-full z-50 top-7`}>
+    <nav className={`w-[97%]`}>
+      <div className="flex justify-center sticky top-7 z-50">
         <section className={`${styles.navigation} gap-1 container mx-auto`}>
           <p className={styles.logo}>Asif</p>
-          <ul className={`${styles.menus} md:!flex !hidden`}>
+          <ul className={`${styles.menus} !md:flex !hidden`}>
             {menus.map((menu) => (
               <Menu key={menu.name} menu={menu} />
             ))}
@@ -32,8 +32,8 @@ const Navigation = () => {
             <StaggeredMenu menus={menus} socials={SOCIALS} />
           </div>
         </section>
-      </nav>
-    </>
+      </div>
+    </nav>
   )
 }
 

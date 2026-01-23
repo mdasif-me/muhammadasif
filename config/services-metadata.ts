@@ -34,10 +34,11 @@ export const servicesMetadata: Metadata = {
       "Professional web development services including React.js development, Next.js applications, UI/UX design, and full-stack solutions.",
     images: [
       {
-        url: "https://muhammadasif.me/og-services.jpg",
+        url: "https://muhammadasif.me/images/muhammadasif-me.webp",
         width: 1200,
         height: 630,
         alt: "Md. Asif - Web Development Services",
+        type: "image/webp",
       },
     ],
   },

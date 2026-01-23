@@ -30,10 +30,11 @@ export const aboutMetadata: Metadata = {
       "Learn about my journey as a Frontend & Full-Stack Developer. 5+ years of experience building high-performance web applications.",
     images: [
       {
-        url: "https://muhammadasif.me/og-about.jpg",
+        url: "https://muhammadasif.me/images/muhammadasif-me.webp",
         width: 1200,
         height: 630,
         alt: "Md. Asif - About",
+        type: "image/webp",
       },
     ],
   },

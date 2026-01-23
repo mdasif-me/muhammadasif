@@ -1,6 +1,5 @@
 import "@/styles/globals.css"
 
-import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 import { Header } from "@/components"
@@ -53,27 +52,19 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <RootWrapper>
-          <Suspense>
-            <Navigation />
-          </Suspense>
+          <Navigation />
           <main className="container mx-auto">{children}</main>
           <div className="container mx-auto my-7">
-            <div className="mt-20 border-wrapper border-[#1A1A1A]! md:p-5 p-1 md:space-y-10 space-y-3">
+            <div className="mt-20 border-wrapper !border-[#1A1A1A] md:p-5 p-1 md:space-y-10 space-y-3">
               <Header name="REVIEWS" />
-              <Suspense>
-                <Reviews />
-              </Suspense>
+              <Reviews />
             </div>
             <div className="mt-28 md:space-y-10 space-y-3">
               <Header name="FREQUENTLY ASKED QUESTIONS" />
-              <Suspense>
-                <FAQ />
-              </Suspense>
+              <FAQ />
             </div>
             <div className="mt-28 md:space-y-10 space-y-3">
-              <Suspense>
-                <Contact />
-              </Suspense>
+              <Contact />
             </div>
           </div>
         </RootWrapper>
