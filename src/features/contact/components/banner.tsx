@@ -1,5 +1,5 @@
+import Image from "next/image"
 import Link from "next/link"
-import { Quote } from "@/components"
 
 import { SOCIALS } from "../constants/social"
 import styles from "../styles/contact.module.css"
@@ -17,9 +17,21 @@ const Banner = () => {
         <Link
           href={SOCIALS[0].href}
           target="_blank"
-          className={styles.bannerLink}
+          rel="noopener noreferrer"
+          className="gap-3 z-10 flex items-center group"
         >
-          <Quote isWrapper text="Get in Touch" />
+          <Image
+            src={"/arrow-border.svg"}
+            alt="Get in touch"
+            width={120}
+            height={120}
+            priority
+            draggable={false}
+            className="w-auto h-auto group-hover:rotate-45 duration-300 ease-in-out"
+          />
+          <p className="text-xl uppercase duration-300 ease-in-out">
+            Get in touch
+          </p>
         </Link>
       </div>
     </div>

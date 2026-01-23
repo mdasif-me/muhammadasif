@@ -1,6 +1,6 @@
 import { JSX } from "react"
+import Image from "next/image"
 import Link from "next/link"
-import { Quote } from "@/components"
 import { HugeiconsIcon, IconSvgElement } from "@hugeicons/react"
 
 import styles from "../styles/contact.module.css"
@@ -35,8 +35,22 @@ const Social = ({
             icon={Icon}
           />
         </div>
-        <Link href={href} aria-label={`Visit ${name}`}>
-          <Quote isBordered isText={false} />
+        <Link
+          href={href}
+          aria-label={`Visit ${name}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="gap-3 z-10 flex items-center group"
+        >
+          <Image
+            src={"/arrow-border.svg"}
+            alt="View All"
+            width={120}
+            height={120}
+            priority
+            draggable={false}
+            className="w-auto h-auto group-hover:rotate-45 duration-300 ease-in-out"
+          />
         </Link>
       </div>
       <div className="flex-1"></div>
