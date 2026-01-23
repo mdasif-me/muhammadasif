@@ -13,7 +13,9 @@ const Navigation = () => {
   return (
     <nav className="w-11/12 mx-auto">
       <div className="flex justify-center fixed min-w-11/12 top-7 z-50">
-        <section className={`${styles.navigation} gap-1 container mx-auto`}>
+        <section
+          className={`${styles.navigation} gap-1 w-full flex items-center justify-between`}
+        >
           <p className={styles.logo}>Asif</p>
           <ul className={`${styles.menus} md:flex! hidden!`}>
             {menus.map((menu) => (

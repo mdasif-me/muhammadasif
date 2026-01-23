@@ -76,7 +76,7 @@ html {
 }
 
 @utility container {
-  @apply mx-auto;
+  @apply mx-auto max-w-11/12;
 }
 
 @layer base {

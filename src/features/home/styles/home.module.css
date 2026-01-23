@@ -211,9 +211,7 @@
   font-size: 16px; /* Much smaller for mobile */
   line-height: 1.3;
 }
-.description {
-  text-align: justify;
-}
+
 .animated_headline,
 .animated_title,
 .animated_subtitle {
@@ -265,7 +263,9 @@
   .subtitle {
     font-size: 20px;
   }
-
+  .description {
+    font-size: 16px;
+  }
   .animated_headline,
   .animated_title,
   .animated_subtitle {
@@ -291,10 +291,6 @@
 
   .subtitle {
     font-size: 24px;
-  }
-
-  .description {
-    font-size: 16px;
   }
 
   .animated_headline,
@@ -444,11 +440,9 @@
   .subtitle {
     font-size: 36px;
   }
-
   .description {
     font-size: 18px;
   }
-
   .animated_headline,
   .animated_title,
   .animated_subtitle {
@@ -579,11 +573,9 @@
     .subtitle {
       font-size: 28px;
     }
-
     .description {
-      font-size: 16px;
+      font-size: 20px;
     }
-
     /* Update animations for tablets */
     @keyframes to_headline {
       0%,
@@ -716,10 +708,6 @@
 
   .subtitle {
     font-size: 36px;
-  }
-
-  .description {
-    font-size: 18px;
   }
 
   .animated_headline,
@@ -858,10 +846,6 @@
 
   .subtitle {
     font-size: 40px;
-  }
-
-  .description {
-    font-size: 20px;
   }
 
   .animated_headline,
