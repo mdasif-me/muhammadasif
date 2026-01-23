@@ -1,7 +1,3 @@
-.font-roboto-flex {
-  font-family: "Roboto Flex", sans-serif;
-}
-
 .card {
   display: flex;
   flex-direction: column;

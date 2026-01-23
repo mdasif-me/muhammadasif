@@ -1,6 +1,6 @@
 export const headline = `SOFTWARE ENGINEER`
 export const title = `PROBLEM SOLVER`
-export const subtitle = `WEB SCALABILITY`
+export const subtitle = `SYSTEM ARCHITECT`
 
 export const description = `Seasoned Mid Level Frontend Developer with 4+ years of expertise in crafting responsive, high
 performance web applications. Proficient in React, TypeScript, and modern CSS frameworks, with a

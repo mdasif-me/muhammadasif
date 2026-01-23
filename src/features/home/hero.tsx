@@ -16,7 +16,7 @@ const Hero = () => {
         <Skills
           duration={"[--duration:160s]"}
           content={core_skills}
-          className="relative overflow-hidden bg-[#0F0F0F] rounded-lg py-2"
+          className="relative overflow-hidden bg-[#0F0F0F] rounded-lg py-2 min-h-[60px]"
         />
         <Link
           href={SOCIALS[0].href}
@@ -24,7 +24,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="xl:w-full !xl:flex !hidden absolute right-6 top-20"
         >
-          <Quote isWrapper className="absolute top-0 right-0" />
+          <Quote isWrapper isBordered className="absolute top-0 right-0" />
         </Link>
       </div>
       <div
