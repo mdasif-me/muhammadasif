@@ -1,14 +1,15 @@
 import Script from "next/script"
+import { calculateExperience } from "@/utils/calculate-experience"
 
 export function StructuredData() {
+  const experience = calculateExperience(2021)
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Muhammad Asif",
     url: "https://muhammadasif.me",
     image: "https://muhammadasif.me/images/muhammadasif-me.webp",
-    description:
-      "Senior Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks.",
+    description: `Senior Frontend Developer with ${experience} years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks.`,
     jobTitle: "Senior Frontend Developer",
     knowsAbout: [
       "React.js",
