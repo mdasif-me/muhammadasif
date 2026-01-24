@@ -282,29 +282,29 @@
     height: 560px;
   }
   .headline {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .subtitle {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .animated_headline,
   .animated_title,
   .animated_subtitle {
-    font-size: 32px;
+    font-size: 26px;
   }
 
-  /* Update animations for 600px devices */
+  /* Update animations for 375px devices */
   @keyframes to_headline {
     0%,
     20% {
       color: #e1eae5;
-      font-size: 32px;
+      font-size: 26px;
       filter: blur(0px);
     }
     26.5% {
@@ -313,7 +313,7 @@
     33%,
     53% {
       color: rgba(243, 246, 245, 0.62);
-      font-size: 28px;
+      font-size: 22px;
       filter: blur(0px);
     }
     59.5% {
@@ -322,7 +322,7 @@
     66%,
     86% {
       color: rgba(243, 246, 245, 0.44);
-      font-size: 24px;
+      font-size: 18px;
       filter: blur(0px);
     }
     93% {
@@ -330,7 +330,7 @@
     }
     100% {
       color: #e1eae5;
-      font-size: 32px;
+      font-size: 26px;
       filter: blur(0px);
     }
   }
@@ -339,7 +339,7 @@
     0%,
     20% {
       color: rgba(243, 246, 245, 0.62);
-      font-size: 28px;
+      font-size: 22px;
       filter: blur(0px);
     }
     26.5% {
@@ -348,7 +348,7 @@
     33%,
     53% {
       color: #e1eae5;
-      font-size: 32px;
+      font-size: 26px;
       filter: blur(0px);
     }
     59.5% {
@@ -357,7 +357,7 @@
     66%,
     86% {
       color: rgba(243, 246, 245, 0.62);
-      font-size: 28px;
+      font-size: 22px;
       filter: blur(0px);
     }
     93% {
@@ -365,7 +365,7 @@
     }
     100% {
       color: rgba(243, 246, 245, 0.62);
-      font-size: 28px;
+      font-size: 22px;
       filter: blur(0px);
     }
   }
@@ -374,7 +374,7 @@
     0%,
     20% {
       color: rgba(243, 246, 245, 0.44);
-      font-size: 24px;
+      font-size: 18px;
       filter: blur(0px);
     }
     26.5% {
@@ -383,7 +383,7 @@
     33%,
     53% {
       color: rgba(243, 246, 245, 0.44);
-      font-size: 24px;
+      font-size: 18px;
       filter: blur(0px);
     }
     59.5% {
@@ -392,7 +392,7 @@
     66%,
     86% {
       color: #e1eae5;
-      font-size: 32px;
+      font-size: 26px;
       filter: blur(0px);
     }
     93% {
@@ -400,7 +400,7 @@
     }
     100% {
       color: rgba(243, 246, 245, 0.44);
-      font-size: 24px;
+      font-size: 18px;
       filter: blur(0px);
     }
   }
