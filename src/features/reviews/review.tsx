@@ -14,9 +14,21 @@ const Review = ({ review }: { review: IReview }) => {
       name: review.name,
     },
     reviewBody: review.review,
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
     itemReviewed: {
-      "@type": "Person",
-      name: "Md Asif",
+      "@type": "Service",
+      "@id": "https://muhammadasif.me/#webdev-service",
+      name: "Web Development Services",
+      provider: {
+        "@type": "Person",
+        name: "Muhammad Asif",
+        url: "https://muhammadasif.me",
+      },
+      serviceType: "Web Development",
     },
   }
 

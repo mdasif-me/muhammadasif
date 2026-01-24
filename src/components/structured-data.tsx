@@ -8,7 +8,7 @@ export function StructuredData() {
     url: "https://muhammadasif.me",
     image: "https://muhammadasif.me/images/muhammadasif-me.webp",
     description:
-      "Seasoned Mid Level Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks.",
+      "Senior Frontend Developer with 4+ years of expertise in crafting responsive, high-performance web applications. Proficient in React, TypeScript, and modern CSS frameworks.",
     jobTitle: "Senior Frontend Developer",
     knowsAbout: [
       "React.js",
@@ -40,11 +40,20 @@ export function StructuredData() {
 
   const businessLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": "https://muhammadasif.me/#business",
     name: "Muhammad Asif - Web Development",
     url: "https://muhammadasif.me",
+    logo: "https://muhammadasif.me/images/muhammadasif-me.webp",
+    image: "https://muhammadasif.me/images/muhammadasif-me.webp",
     description:
       "Professional web development services specializing in React.js and Next.js",
+    priceRange: "$$",
+    telephone: "+880-193-0248584",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "BD",
+    },
   }
 
   const jsonLd = [personLd, businessLd]
