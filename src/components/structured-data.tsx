@@ -1,7 +1,10 @@
+"use client"
+
+import { Suspense } from "react"
 import Script from "next/script"
 import { calculateExperience } from "@/utils/calculate-experience"
 
-export function StructuredData() {
+function StructuredDataContent() {
   const experience = calculateExperience(2021)
   const personLd = {
     "@context": "https://schema.org",
@@ -66,5 +69,13 @@ export function StructuredData() {
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       strategy="afterInteractive"
     />
+  )
+}
+
+export function StructuredData() {
+  return (
+    <Suspense fallback={null}>
+      <StructuredDataContent />
+    </Suspense>
   )
 }
